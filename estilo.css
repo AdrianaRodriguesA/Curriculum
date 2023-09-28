@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(57, 15, 5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 28px;
+}
+.container {
+    width: 50%;
+    overflow-y: scroll;
+    height: 90vh;
+    padding: 15px 2%;
+    box-shadow: 0 0 8px rgb(115, 25, 5);
+    background-color: rgb(240, 235, 225);
+}
+.container::-webkit-scrollbar{
+    width: 14px;
+    border: 1px solid rgb(115, 25, 5);
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: rgb(115, 25, 5);
+    border-radius: 6px;
+}
+.hr_dados, .hr_1, .hr_2, .hr_3, .hr_4, .hr_5 {
+    border-top: medium ridge rgb(115, 25, 5);
+    border-bottom: medium ridge rgb(115, 25, 5);
+    height: 4px;
+    overflow: visible;
+    padding: 0;
+    text-align: center;
+}
+.hr_dados::after, 
+.hr_1::after,
+.hr_2::after,
+.hr_3::after,
+.hr_4::after,
+.hr_5::after {
+    font-size: 24px;
+    padding: 0 3px;
+    top: -15px;
+    background: rgba(240, 235, 225);
+    display: inline;
+    position: relative;
+}
+.hr_dados::after {
+    content: "Currículo";
+}
+.hr_1::after {
+    content: "Objetivo";
+}
+.hr_2::after {
+    content: "História Acadêmica";
+}
+.hr_3::after {
+    content: "Qualificações e habilidades";
+}
+.hr_4::after {
+    content: "Experiência de trabalho";
+}
+.hr_5::after {
+    content: "Redes Sociais";
+}
+img, button {
+    cursor: pointer;
+    margin: 5px;
+    max-height: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+img:hover, button:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+}
+button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(240, 235, 225);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(115, 25, 5);
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(36, 43, 37, 0.6);
+}
+footer h6 {
+    background-color: rgb(115, 25, 5);
+    color: rgb(240, 235, 225);
+    font-weight: 100;
+}
